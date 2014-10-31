@@ -1,0 +1,539 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+// endbower
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+    font-family: ssRegular;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: ssItalic;
+    src: url(../fonts/SourceSansPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: ssLight;
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: ssLightItalic;
+    src: url(../fonts/SourceSansPro-LightItalic.ttf);
+}
+
+$nav: OpenSans;
+$regular: ssRegular;
+$italic: ssItalic;
+$light: ssLight;
+$light_italic: ssLightItalic;
+
+$primary-color: #3b6888;
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: none;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+
+    nav {
+        background-color: transparent;
+        border: none;
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        ul.nav {
+            float: right;
+
+            a {
+                font: 18px $regular;
+                color: white;
+                text-transform: uppercase;
+                margin-left: 100px;
+            }
+
+            a:hover {
+                font-style: italic;
+                color: white;
+            }
+
+            li.active a {
+                background-color: transparent;
+            }
+        }
+    }
+
+    a.navbar-brand {
+        margin-top: -3em;
+
+        img {
+            margin-top: 1em;
+            width: 60%;
+            padding-left: 2em;
+        }
+    }
+}
+
+/* Page content */
+
+.row {
+    .col-md-12 {
+        padding: 0;
+    }
+
+    .slider {
+        position: absolute;
+        margin-top: -7.5em;
+        z-index: -999;
+
+        .tagline {
+            position: absolute;
+            z-index: 1;
+
+            .text {
+                position: absolute;
+                width: 100%;
+                padding-top: 22em;
+
+                h1 {
+                    width: 100%;
+                    font: 46px $light;
+                    color: white;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+
+            .shapes {
+                img {
+                    width: 100%;
+                    padding-top: 16em;
+                }
+            }
+        }
+
+        .carousel {
+            height: 100%;
+
+            .carousel-inner {
+                height: 100%;  
+
+                .item {
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }  
+
+                .active {
+                    height: 100%;
+                }
+            }
+
+        }
+    }
+
+    .destination {
+        position: relative;
+        margin-top: 48em;
+        width: 100%;
+
+        h1.headline {
+            width: 100%;
+            font: 46px $light;
+            color: $primary-color;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .headlineShape {
+            margin-top: -2em;
+            img {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+
+    .destination01 {
+        margin-top: 2em;
+
+        img {
+            width: 50%;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .destination02 {
+        margin-top: 2em;
+
+        img {
+            width: 50%;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .about {
+        background-image: url('../images/about/aboutBg.png');
+        height: 100%;
+        margin-top: 5em;
+
+        h1.headline {
+            width: 100%;
+            font: 46px $light;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .headlineShape {
+            margin-top: -2em;
+            img {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+
+        .aboutInfo {
+            margin-top: 1em;
+
+            p {
+                text-align: center;
+                font: 22px $light;
+                color: white;
+                padding-bottom: 10em;
+            }
+
+        }
+    }
+
+    .instr01 {
+        img {
+            width: 50%;
+            display: block;
+            margin-right: auto;
+            margin-left: 20em;
+            margin-top: -10em;
+        }
+    }
+
+    .instr02 {
+        img {
+            width: 50%;
+            display: block;
+            margin-right: 20em;
+            margin-left: auto;
+            margin-top: -10em;
+        }
+    }
+
+    .contacts{
+        width: 100%;
+        margin-top: 4em;
+
+        h1.headline {
+            width: 100%;
+            font: 46px $light;
+            color: $primary-color;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .headlineShape {
+            margin-top: -2em;
+            img {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+
+    .contactForm {
+            margin-top: 3em;
+            input {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                width: 80%;
+                margin-bottom: 1em;
+                background-color: #f7f7f7;
+                border-radius: 3px;
+                box-shadow: none;
+                font: 100% $light;
+                border: 1px solid #e1e1e1;
+            }
+
+            textarea {
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                width: 80%;
+                margin-bottom: 1em;
+                background-color: #f7f7f7;
+                border-radius: 3px;
+                box-shadow: none;
+                font: 100% $light;
+                border: 1px solid #e1e1e1;
+                max-width: 100%;
+            }
+
+            ::-webkit-input-placeholder {
+               color: $primary-color;
+               font: 100% $light_italic;
+            }
+
+            :-moz-placeholder { /* Firefox 18- */
+               color: $primary-color;
+               font: 100% $light_italic;  
+            }
+
+            ::-moz-placeholder {  /* Firefox 19+ */
+               color: $primary-color;  
+               font: 100% $light_italic;
+            }
+
+            :-ms-input-placeholder {  
+               color: $primary-color; 
+               font: 100% $light_italic; 
+            }
+
+        .send {
+            float: right;
+            border-color: white;
+            font: 24px $italic;
+            color: $primary-color;
+            margin-right: 1.3em;
+        }
+
+        button.send:hover {
+            background: white;
+        }
+    }
+
+    .contactInfo {
+        margin-top: 5em;
+        p {
+            font: 22px $light;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+    }
+
+    .social {
+        margin-top: 3em;
+        .fb {
+            position: absolute;
+            margin-left: 7em;
+            width: 136px;
+            height: 136px;
+            background-image: url(../images/contact/fb.png);
+        }
+
+        .instgrm {
+            position: absolute;
+            margin-top: 5.3em;
+            margin-left: 1.8em;
+            width: 136px;
+            height: 136px;
+            background-image: url(../images/contact/instagr.png);
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s; /* Safari */
+        }
+
+        .mail {
+            position: absolute;
+            margin-top: 5.3em;
+            margin-left: 12.3em;
+            width: 136px;
+            height: 136px;
+            background-image: url(../images/contact/email.png);
+        }
+
+        .twitter {
+            position: absolute;
+            margin-top: 10.5em;
+            margin-left: 7em;
+            width: 136px;
+            height: 136px;
+            background-image: url(../images/contact/twitter.png);
+        }
+
+        .instgrm:hover {
+            position: absolute;
+            margin-top: 5.3em;
+            margin-left: 1.8em;
+            width: 136px;
+            height: 136px;
+            background-image: url(../images/contact/instagr_hov.png);
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s; /* Safari */
+            -o-transition: all 0.5s;
+            -moz-webkit-transition: all 0.5s; 
+        }
+        
+        .fb:hover {
+            position: absolute;
+            margin-left: 7em;
+            width: 136px;
+            height: 136px;
+            background-image: url(../images/contact/fb_hov.png);
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s; /* Safari */
+            -o-transition: all 0.5s;
+            -moz-webkit-transition: all 0.5s; 
+        }
+
+        .mail:hover {
+            position: absolute;
+            margin-top: 5.3em;
+            margin-left: 12.3em;
+            width: 136px;
+            height: 136px;
+            background-image: url(../images/contact/email_hov.png);
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s; /* Safari */
+            -o-transition: all 0.5s;
+            -moz-webkit-transition: all 0.5s; 
+        }
+
+        .twitter:hover {
+            position: absolute;
+            margin-top: 10.5em;
+            margin-left: 7em;
+            width: 136px;
+            height: 136px;
+            background-image: url(../images/contact/twitter_hov.png);
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s; /* Safari */
+            -o-transition: all 0.5s;
+            -moz-webkit-transition: all 0.5s; 
+        }
+    }
+
+    
+}
+
+.navbar {
+    position: static;
+    background: #fff;
+    width: 100%;
+    top: -250px;
+}
+
+.affix {
+    width: 102%;
+    background-color: white!important;
+    margin-left: -2em;
+    top: 0;
+    z-index: 99999;
+    position: fixed;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; /* Safari */
+
+    a.navbar-brand {
+        margin-right: -2em;
+        img {
+            margin-top: 2em;
+            width: 40%;
+        }
+    }
+
+    .navbar-collapse {
+        float: right;
+
+        ul {
+            li {
+                margin-right: 2em;
+                a {
+                    color: $primary-color;
+                }
+
+                a:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 940px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
